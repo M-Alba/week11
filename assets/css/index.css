@@ -1,0 +1,77 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", Georgia, sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.section-cart__title {
+	margin: 30px 0 30px 0;
+	text-align: center;
+}
+
+.section-cart__wrapper {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.section-cart__row {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.section-cart__image {
+	max-width: 100px;
+	justify-self: center;	
+}
+
+.section-cart__product {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section-cart__price {
+	align-self: center;
+	font-weight: 600;
+	color: blue;
+}
+
+.section-cart__row-total {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 1fr;
+	gap: 10px;
+}
+
+.section-cart__total {
+	align-self: center;
+	text-align: right;
+	font-weight: 600;
+}
+
+.section-cart__total-sum {
+	align-self: center;
+	text-align: left;
+	font-weight: 600;
+	color: blue;
+}
+
+.section-cart__button {
+	width: 250px;
+	height: 50px;
+	justify-self: end;
+	font-family: "Roboto", Georgia, sans-serif;
+	font-size: 16px;
+    font-weight: 600;
+    color: blue;
+	cursor: pointer;
+}
