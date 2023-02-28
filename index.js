@@ -1,16 +1,17 @@
-let element = document.querySelectorAll('.section-cart__price');
+const element = document.querySelectorAll('.section-cart__price');
 
-let price1 = element[0].textContent.split(' '),
+const price1 = element[0].textContent.split(' '),
     price2 = element[1].textContent.split(' '),
     price3 = element[2].textContent.split(' '),
     price4 = element[3].textContent.split(' ');
-let sum = +price1[0] + +price2[0] + +price3[0] + +price4[0];
 
-let totalSum = document.querySelector('.section-cart__total-sum');
+const sum = +price1[0] + +price2[0] + +price3[0] + +price4[0];
+
+const totalSum = document.querySelector('.section-cart__total-sum');
+
+const button = document.querySelector('.section-cart__button');
+
 totalSum.textContent = `${sum} руб.`;
-
-let button = document.querySelector('.section-cart__button');
-button.addEventListener('click', makeClick, true);
 
 function makeClick() {
     priceDiscount1 = +price1[0] - (+price1[0] * 0.2);
@@ -27,3 +28,5 @@ function makeClick() {
 
     totalSum.textContent = `${sumDiscount} руб.`;
 }
+
+button.addEventListener('click', makeClick, true);
